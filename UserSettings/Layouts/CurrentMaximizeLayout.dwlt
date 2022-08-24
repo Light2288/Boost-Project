@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 12384
+  controlID: 16389
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 12385
+  controlID: 16390
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 12360
+  controlID: 16391
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.42805892, y: -0.907464, z: -2.1229146}
+    m_Target: {x: 0.6993022, y: -4.681424, z: -3.4335837}
     speed: 2
-    m_Value: {x: 0.42805892, y: -0.907464, z: -2.1229146}
+    m_Value: {x: 0.6993022, y: -4.681424, z: -3.4335837}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -551,13 +551,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.25544518, y: -0.0037723342, z: 0.0009984622, w: -0.96681815}
+    m_Target: {x: -0.23508352, y: -0.00670843, z: 0.0016241458, w: -0.9719535}
     speed: 2
-    m_Value: {x: -0.2554446, y: -0.003772325, z: 0.0009984599, w: -0.9668158}
+    m_Value: {x: -0.23508288, y: -0.006708412, z: 0.0016241414, w: -0.9719508}
   m_Size:
-    m_Target: 24.77478
+    m_Target: 25.187798
     speed: 2
-    m_Value: 24.77478
+    m_Value: 25.187798
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -650,21 +650,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/davide/Personal/Development/Unity/Unity_3D/Project Boost
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 486f0000
-    m_LastClickedID: 28488
+    m_SelectedIDs: fa6d0000
+    m_LastClickedID: 28154
     m_ExpandedIDs: 00000000fa6d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
