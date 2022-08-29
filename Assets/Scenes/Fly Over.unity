@@ -256,6 +256,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 32.995
       objectReference: {fileID: 0}
+    - target: {fileID: 680217334810425602, guid: 05619907c6f1f43eea55c56cf13f4b8e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5c89587d553c423cbc0ead19cd2faaf, type: 2}
     - target: {fileID: 680217334810425628, guid: 05619907c6f1f43eea55c56cf13f4b8e, type: 3}
       propertyPath: m_Name
       value: Obstacle (8)
@@ -326,6 +330,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 680217334810425602, guid: 05619907c6f1f43eea55c56cf13f4b8e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5c89587d553c423cbc0ead19cd2faaf, type: 2}
     - target: {fileID: 680217334810425628, guid: 05619907c6f1f43eea55c56cf13f4b8e, type: 3}
       propertyPath: m_Name
       value: Obstacle (9)
@@ -392,6 +400,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 22.466
       objectReference: {fileID: 0}
+    - target: {fileID: 680217334810425602, guid: 05619907c6f1f43eea55c56cf13f4b8e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5c89587d553c423cbc0ead19cd2faaf, type: 2}
     - target: {fileID: 680217334810425628, guid: 05619907c6f1f43eea55c56cf13f4b8e, type: 3}
       propertyPath: m_Name
       value: Obstacle (6)
@@ -1005,6 +1017,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -18.587
       objectReference: {fileID: 0}
+    - target: {fileID: 680217334810425602, guid: 05619907c6f1f43eea55c56cf13f4b8e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5c89587d553c423cbc0ead19cd2faaf, type: 2}
     - target: {fileID: 680217334810425628, guid: 05619907c6f1f43eea55c56cf13f4b8e, type: 3}
       propertyPath: m_Name
       value: Obstacle (11)
