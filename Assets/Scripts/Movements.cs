@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Movements : MonoBehaviour
 {
-    private Rigidbody _rigidbody;
     [SerializeField] private float mainThrust = 1000f;
     [SerializeField] private float rotationThrust = 15f;
+    [SerializeField] private AudioClip engineThrust;
+    [SerializeField] private ParticleSystem rightSideRocketParticleSystem;
+    [SerializeField] private ParticleSystem leftSideRocketParticleSystem;
+    [SerializeField] private ParticleSystem mainRocketParticleSystem;
+    
+    private Rigidbody _rigidbody;
     private AudioSource _audioSource;
     
     // Start is called before the first frame update
@@ -27,27 +32,47 @@ public class Movements : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            _rigidbody.AddRelativeForce(CalculateThrust(Vector3.up, mainThrust));
-            if (!_audioSource.isPlaying)
-            {
-                _audioSource.Play();
-            }
+            StartThrusting();
         }
         else
         {
-            _audioSource.Stop();
+            StopThrusting();
         }
     }
+
+    private void StartThrusting()
+    {
+        _rigidbody.AddRelativeForce(CalculateThrust(Vector3.up, mainThrust));
+        if (!_audioSource.isPlaying)
+        {
+            _audioSource.PlayOneShot(engineThrust);
+        }
+
+        PlayRocketParticle(mainRocketParticleSystem);
+    }
     
+    private void StopThrusting()
+    {
+        _audioSource.Stop();
+        mainRocketParticleSystem.Stop();
+    }
+
     void ProcessRotation()
     {
         if (Input.GetKey(KeyCode.A))
         {
             ApplyRotation(Vector3.forward);
+            PlayRocketParticle(rightSideRocketParticleSystem);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            ApplyRotation(Vector3.back);;
+            ApplyRotation(Vector3.back);
+            PlayRocketParticle(leftSideRocketParticleSystem);
+        }
+        else
+        {
+            leftSideRocketParticleSystem.Stop();
+            rightSideRocketParticleSystem.Stop();
         }
     }
 
@@ -56,6 +81,14 @@ public class Movements : MonoBehaviour
         _rigidbody.freezeRotation = true;
         transform.Rotate(CalculateThrust(direction, rotationThrust));
         _rigidbody.freezeRotation = false;
+    }
+    
+    private void PlayRocketParticle(ParticleSystem ps)
+    {
+        if (!ps.isPlaying)
+        {
+            ps.Play();
+        }
     }
 
     private Vector3 CalculateThrust(Vector3 vector3, float thrust)
